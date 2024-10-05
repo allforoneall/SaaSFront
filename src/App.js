@@ -36,15 +36,13 @@ const App = () => {
             rating: '10'
         }
     ];
-
-    // Function to format the release date
+    
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         const day = date.getDate();
         const month = date.toLocaleString('default', { month: 'long' });
         const year = date.getFullYear();
 
-        // Determine the ordinal suffix for the day
         let suffix = 'th';
         if (day % 10 === 1 && day !== 11) {
             suffix = 'st';
@@ -56,8 +54,6 @@ const App = () => {
 
         return `${day}${suffix} ${month}, ${year}`;
     };
-
-    // Filter reviews based on the search term
     const filteredReviews = reviews.filter(review =>
         review.movieName.toLowerCase().includes(searchTerm.toLowerCase())
     );
