@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.app {
+    text-align: center;
+    padding: 80px 20px; /* Padding to avoid overlap with the fixed header */
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3E8ED; /* Updated header background color */
+    color: #333;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+.header-left h2 {
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+.header-container {
+    margin: 0px 1.4%; /* Margin for header container */
+    text-align: left; /* Align items to the left */
+}
+
+.header-btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+    background-color: #3700b3;
+}
+
+/* Main Heading */
+h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Search Box */
+.search-box {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6200ea;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* Review Box Styles */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 boxes per row */
+    gap: 20px; /* Space between the boxes */
+    padding: 20px;
+}
+
+.movie-review-box {
+    background-color: #E0DEFD; /* Updated review box color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px; /* Fixed height of review boxes */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Arranges content in a column */
+    justify-content: space-between; /* Ensures even spacing between elements */
+    text-align: left; /* Aligns text to the left */
+}
+
+.movie-review-box h3 {
+    margin: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+    color: #6200ea;
+    font-size: 20px; /* Increased font size for movie title */
+}
+
+.movie-review-box p {
+    margin: 10px 0; /* Uniform margin for paragraphs */
+    color: #333;
+    flex-grow: 1; /* Allows the paragraph to take up remaining space */
+    font-size: 16px; /* Increased font size for review text */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Action Buttons */
+.action-btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #3700b3;
+}
+
+.delete-btn {
+    background-color: #e63946; /* Different color for delete button */
+}
+
+.delete-btn:hover {
+    background-color: #c62839; /* Darker shade for delete button on hover */
+}
